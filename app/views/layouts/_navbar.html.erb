@@ -16,7 +16,7 @@
               <li class="dropdown-item"><%= link_to 'My profile', user_path(current_user) %></li>
               <li class="dropdown-driver"></li>
               <li class="dropdown-item"><%= link_to 'Logout', logout_path, method: :delete %></li>
-              <li class="dropdown-item"><%= link_to 'Favorites', likes_user_path(current_user) %><span class="badge badge-secondary"><%= @count_favorites %></span></li>
+              <li class="dropdown-item"><%= link_to 'Favorites', likes_user_path(current_user) %><span class="badge badge-secondary"></span></li>
             </ul>
           </li>
         <% else %>
