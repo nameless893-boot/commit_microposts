@@ -1,6 +1,7 @@
 <header class="mb-4">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Microposts</a>
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,7 +16,7 @@
               <li class="dropdown-item"><%= link_to 'My profile', user_path(current_user) %></li>
               <li class="dropdown-driver"></li>
               <li class="dropdown-item"><%= link_to 'Logout', logout_path, method: :delete %></li>
-              <li class="dropdown-item"><%= link_to 'Favorites', likes_user_path(current_user) %><span class="badge badge-secondary"><%= @count_favorites %></span></li>    
+              <li class="dropdown-item"><%= link_to 'Favorites', likes_user_path(current_user) %><span class="badge badge-secondary"><%= @count_favorites %></span></li>
             </ul>
           </li>
         <% else %>
@@ -25,4 +26,5 @@
       </ul>
     </div>
   </nav>
-</header>
+</header>  
+    
